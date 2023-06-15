@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.33403.129
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ContactPathPlan", "ContactPathPlan\ContactPathPlan.vcxproj", "{1408D71F-1DF4-4654-897C-93A3FAC7771E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1408D71F-1DF4-4654-897C-93A3FAC7771E}.Debug|x64.ActiveCfg = Debug|x64
+		{1408D71F-1DF4-4654-897C-93A3FAC7771E}.Debug|x64.Build.0 = Debug|x64
+		{1408D71F-1DF4-4654-897C-93A3FAC7771E}.Debug|x86.ActiveCfg = Debug|Win32
+		{1408D71F-1DF4-4654-897C-93A3FAC7771E}.Debug|x86.Build.0 = Debug|Win32
+		{1408D71F-1DF4-4654-897C-93A3FAC7771E}.Release|x64.ActiveCfg = Release|x64
+		{1408D71F-1DF4-4654-897C-93A3FAC7771E}.Release|x64.Build.0 = Release|x64
+		{1408D71F-1DF4-4654-897C-93A3FAC7771E}.Release|x86.ActiveCfg = Release|Win32
+		{1408D71F-1DF4-4654-897C-93A3FAC7771E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02FA50DD-14E5-4D22-81EB-A67D31BB349D}
+	EndGlobalSection
+EndGlobal

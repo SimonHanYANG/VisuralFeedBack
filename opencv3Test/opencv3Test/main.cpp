@@ -19,6 +19,8 @@ cv::Point detectMicroPipetteTip(cv::Mat image)
 	/*函数使用RETR_EXTERNAL参数表示只检测最外层轮廓，而使用CHAIN_APPROX_SIMPLE参数表示仅存储轮廓的端点*/
 	cv::findContours(binaryImage, contours, hierarchy, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
+	cout << "Contour Size: " << contours.size() << ".\n" << endl;
+
 	// 找到面积最大的轮廓
 	int maxIndex = 0;
 	double maxArea = 0;
@@ -36,10 +38,14 @@ cv::Point detectMicroPipetteTip(cv::Mat image)
 	contours.erase(contours.begin() + maxIndex);
 
 	cv::Scalar color(0, 255, 0);
-	for (int i = 0; i < contours.size(); i++) {
-		cv::drawContours(image, contours, i, color, 2);
-		
+	if (contours.size() > 0)
+	{
+		for (int i = 0; i < contours.size(); i++) {
+			cv::drawContours(image, contours, i, color, 2);
+
+		}
 	}
+	
 
 	/*cv::imshow("Counters", image);
 	cv::waitKey(0);*/
@@ -76,7 +82,8 @@ cv::Point detectMicroPipetteTip(cv::Mat image)
 
 int main(int argc, char** argv)
 {
-	string video_path = "D:\\Simon_workspace\\ContactDetection_Video\\contactResult_newest.mp4";
+	//string video_path = "D:\\Simon_workspace\\ContactDetection_Video\\contactResult_newest.mp4";
+	string video_path = "D:\\Simon_workspace\\ContactDetection_Video\\pipetiete_tip_1.mp4";
 
 	VideoCapture cap(video_path);
 
